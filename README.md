@@ -17,7 +17,7 @@
  
 ```Java
  private static final String serverUrl = "https://sms.100sms.cn/api";
- private static final String apikey = "xxxxxxxxxxxxxxxxxxxxxxxxxxxxx";<font color=gray>//修改为您的apikey</font>
+ private static final String apikey = "xxxxxxxxxxxxxxxxxxxxxxxxxxxxx";//修改为您的apikey
  private static final YibaiClient client = new DefaultYibaiClient(serverUrl, apikey);
 
  public void testSmsBatchSubmit() {
