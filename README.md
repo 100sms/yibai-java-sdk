@@ -11,7 +11,7 @@
     <version>1.0.0</version>
 </dependency>
 ```
-*如果非maven项目可手动[获取jar包][1]*
+*如果非maven项目可手动<a target="_blank" href="http://search.maven.org/#search%7Cga%7C1%7Ccom.github.100sms">获取jar包</a>*
 
  - 调用方法
  
