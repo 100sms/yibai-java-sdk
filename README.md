@@ -14,17 +14,12 @@
 *如果非maven项目可手动[获取jar包][1]*
 
  - 调用方法
+ 
 ```
-//调用地址
 private static final String serverUrl = "https://sms.100sms.cn/api";
-// 修改为您的apikey
 private static final String apikey = "xxxxxxxxxxxxxxxxxxxxxxxxxxxxx";
-//初始化client
 private static final YibaiClient client = new DefaultYibaiClient(serverUrl, apikey);
 
-/**
-*批量发送验证码短信的调用示例
-*/
 public void testSmsBatchSubmit() {
     try {
         client.smsBatchSubmit(Arrays.asList(
@@ -37,6 +32,7 @@ public void testSmsBatchSubmit() {
         e.printStackTrace();
     }
 }
+
 ```
 
   [1]: http://search.maven.org/#search%7Cga%7C1%7Ccom.github.100sms
