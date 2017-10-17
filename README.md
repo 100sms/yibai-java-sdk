@@ -35,5 +35,8 @@
 
 ```
 
-  [1]: http://search.maven.org/#search%7Cga%7C1%7Ccom.github.100sms
-  
+# 注意事项
+
+ - 请使用jdk1.7或更高版本
+ - 测试sdk请使用YibaiClientTest类,http请求测试请使用JavaSmsApiSample类
+ - 详细api文档请参考<a target="_blank" href="https://web.100sms.cn/api1.0/document">https://web.100sms.cn/api1.0/document</a>
