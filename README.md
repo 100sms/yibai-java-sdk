@@ -5,7 +5,7 @@
  - 添加maven依赖
  
 ```
- <dependency>
+<dependency>
   <groupId>com.github.100sms</groupId>
   <artifactId>yibai-sms-java-sdk</artifactId>
   <version>1.0.0</version>
