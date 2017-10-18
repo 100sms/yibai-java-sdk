@@ -39,4 +39,4 @@
 
  - 请使用jdk1.7或更高版本
  - 测试sdk请使用YibaiClientTest类,http请求测试请使用JavaSmsApiSample类
- - 详细api文档请参考<a target="_blank" href="https://web.100sms.cn/api1.0/document">https://web.100sms.cn/api1.0/document</a>
+ - 详细api文档请参考https://www.100sms.cn/api1.0/document
