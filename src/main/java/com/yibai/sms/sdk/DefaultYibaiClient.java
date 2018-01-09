@@ -5,19 +5,9 @@ import com.yibai.sms.sdk.common.YibaiApiException;
 import com.yibai.sms.sdk.common.YibaiException;
 import com.yibai.sms.sdk.common.YibaiRequest;
 import com.yibai.sms.sdk.common.YibaiResponse;
-import com.yibai.sms.sdk.domain.MarketingSmsBatchResult;
-import com.yibai.sms.sdk.domain.MarketingSmsStatusReport;
-import com.yibai.sms.sdk.domain.SmsBatchSubmitResult;
-import com.yibai.sms.sdk.domain.SmsReplyMessage;
-import com.yibai.sms.sdk.domain.SmsStatusReport;
-import com.yibai.sms.sdk.domain.SmsSubmit;
+import com.yibai.sms.sdk.domain.*;
 import com.yibai.sms.sdk.internal.util.HttpUtils;
-import com.yibai.sms.sdk.request.MarketingSmsPullStatusReportRequest;
-import com.yibai.sms.sdk.request.MarketingSmsSubmitRequest;
-import com.yibai.sms.sdk.request.SmsBatchSubmitRequest;
-import com.yibai.sms.sdk.request.MarketingSmsPullReplyMessageRequest;
-import com.yibai.sms.sdk.request.SmsPullReplyMessageRequest;
-import com.yibai.sms.sdk.request.SmsPullStatusReportRequest;
+import com.yibai.sms.sdk.request.*;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 
@@ -58,7 +48,7 @@ public class DefaultYibaiClient implements YibaiClient {
         return execute(request);
     }
 
-    public MarketingSmsBatchResult marketingSmsSubmit(String message , String sendTime, List<String> mobiles) {
+    public MarketingSmsBatchResult marketingSmsSubmit(String message, String sendTime, List<String> mobiles) {
         MarketingSmsSubmitRequest request = new MarketingSmsSubmitRequest();
         request.setMessage(message);
         request.setSendTime(sendTime);
@@ -75,7 +65,12 @@ public class DefaultYibaiClient implements YibaiClient {
         MarketingSmsPullReplyMessageRequest request = new MarketingSmsPullReplyMessageRequest();
         return execute(request);
     }
-    
+
+    public UserInfo userInfo() {
+        UserInfoRequest request = new UserInfoRequest();
+        return execute(request);
+    }
+
     protected <R, T extends YibaiResponse<R>> R execute(YibaiRequest<T> request) throws YibaiException {
         T res;
         try {

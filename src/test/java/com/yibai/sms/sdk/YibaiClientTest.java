@@ -48,4 +48,9 @@ public class YibaiClientTest {
         }
     }
 
+    @Test
+    public void testUserInfo() {
+        client.userInfo();
+    }
+
 }
