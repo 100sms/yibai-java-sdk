@@ -8,7 +8,7 @@
 <dependency>
     <groupId>com.github.100sms</groupId>
     <artifactId>yibai-sms-java-sdk</artifactId>
-    <version>1.0.0</version>
+    <version>1.0.1</version>
 </dependency>
 ```
 *如果非maven项目可手动<a target="_blank" href="http://search.maven.org/#search%7Cga%7C1%7Ccom.github.100sms">获取jar包</a>*
