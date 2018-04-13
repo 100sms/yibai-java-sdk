@@ -12,12 +12,7 @@ import com.yibai.sms.sdk.domain.SmsReplyMessage;
 import com.yibai.sms.sdk.domain.SmsStatusReport;
 import com.yibai.sms.sdk.domain.SmsSubmit;
 import com.yibai.sms.sdk.internal.util.HttpUtils;
-import com.yibai.sms.sdk.request.MarketingSmsPullStatusReportRequest;
-import com.yibai.sms.sdk.request.MarketingSmsSubmitRequest;
-import com.yibai.sms.sdk.request.SmsBatchSubmitRequest;
-import com.yibai.sms.sdk.request.MarketingSmsPullReplyMessageRequest;
-import com.yibai.sms.sdk.request.SmsPullReplyMessageRequest;
-import com.yibai.sms.sdk.request.SmsPullStatusReportRequest;
+import com.yibai.sms.sdk.request.*;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 
@@ -73,6 +68,11 @@ public class DefaultYibaiClient implements YibaiClient {
 
     public List<SmsReplyMessage> marketingSmsPullReplyMessage() {
         MarketingSmsPullReplyMessageRequest request = new MarketingSmsPullReplyMessageRequest();
+        return execute(request);
+    }
+
+    public String smsTest() {
+        SmsTestRequest request = new SmsTestRequest();
         return execute(request);
     }
     

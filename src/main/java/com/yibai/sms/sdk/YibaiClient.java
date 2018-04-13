@@ -27,4 +27,7 @@ public interface YibaiClient {
     List<MarketingSmsStatusReport> marketingSmsPullStatusReport();
     
     List<SmsReplyMessage> marketingSmsPullReplyMessage();
+
+    String smsTest();
+
 }
