@@ -1,11 +1,6 @@
 package com.yibai.sms.sdk;
 
-import com.yibai.sms.sdk.domain.MarketingSmsBatchResult;
-import com.yibai.sms.sdk.domain.MarketingSmsStatusReport;
-import com.yibai.sms.sdk.domain.SmsBatchSubmitResult;
-import com.yibai.sms.sdk.domain.SmsReplyMessage;
-import com.yibai.sms.sdk.domain.SmsStatusReport;
-import com.yibai.sms.sdk.domain.SmsSubmit;
+import com.yibai.sms.sdk.domain.*;
 
 import java.util.List;
 
@@ -22,11 +17,13 @@ public interface YibaiClient {
 
     List<SmsReplyMessage> smsPullReplyMessage();
 
-    MarketingSmsBatchResult marketingSmsSubmit(String message , String sendTime, List<String> mobiles);
-    
+    MarketingSmsBatchResult marketingSmsSubmit(String message, String sendTime, List<String> mobiles);
+
     List<MarketingSmsStatusReport> marketingSmsPullStatusReport();
-    
+
     List<SmsReplyMessage> marketingSmsPullReplyMessage();
+
+    UserInfo userInfo();
 
     String smsTest();
 
