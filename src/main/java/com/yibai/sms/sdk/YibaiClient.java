@@ -24,4 +24,7 @@ public interface YibaiClient {
     List<SmsReplyMessage> marketingSmsPullReplyMessage();
 
     UserInfo userInfo();
+
+    String smsTest();
+
 }

@@ -71,6 +71,11 @@ public class DefaultYibaiClient implements YibaiClient {
         return execute(request);
     }
 
+    public String smsTest() {
+        SmsTestRequest request = new SmsTestRequest();
+        return execute(request);
+    }
+
     protected <R, T extends YibaiResponse<R>> R execute(YibaiRequest<T> request) throws YibaiException {
         T res;
         try {
