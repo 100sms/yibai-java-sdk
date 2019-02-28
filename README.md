@@ -16,7 +16,7 @@
  - 调用方法
  
 ```Java
- private static final String serverUrl = "https://sms.100sms.cn/api";
+ private static final String serverUrl = "xxxxxxxxx";//修改为相应的api地址
  private static final String apikey = "xxxxxxxxxxxxxxxxxxxxxxxxxxxxx";//修改为您的apikey
  private static final YibaiClient client = new DefaultYibaiClient(serverUrl, apikey);
 
